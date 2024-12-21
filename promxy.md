@@ -6,8 +6,18 @@ Promxy is a prometheus proxy that makes many shards of prometheus appear as a si
 - Advantages:  
   - Query Federation
   - Single Endpoint
+  - Remote Write ability to `destination`
+  - Recording Rules
+  - Alerting Rules
 
 ## Promxy based Sharding  
 How was the Sharding achieved?  
 Discuss Prometheus Sharding?
+
+## Sharding Logic  
+- Base CPU per rule
+- Base Memory per rule
+- determine the total recording rules and complexity
+- configure HPA
+- configure prometheus shards
 
